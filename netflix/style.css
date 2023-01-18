@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #000;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/cover.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 195px;
+    height: 109px; 
+    background-image: url("./images/Logo.png");
+    margin-top: 14px;
+}
+button{
+         padding: 7px 17px;
+        background: #E50914;
+        color: #ffffff;
+        border: none;
+        margin-top: 28px;
+        margin-right: 65px;
+        font-size: 1rem;
+        border-radius: 3px;
+        cursor: pointer;
+}
+
+.text{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+ 
+.text h1{
+       color: #ffffff;
+       font-size: 48px;
+       font-weight: 700;
+
+}  
+.text h2{
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    /* line-height: 45px; */
+    margin-top: 1rem;
+}
+.text h5{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 500;
+
+}
+.form{
+    text-align: center;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+ input{
+        width: 440px;
+        height: 60px;
+        outline:none;
+        padding: 10px;
+        font-size: 1rem;
+}
+.bttn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        background: #E50914;
+        cursor: pointer;
+} 
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    
+    padding: 5px 20px;
+}
+.bttn:hover{
+    background-color: crimson;
+}
+
+
+/* *!      **********************features******************** */
+
+.fetures{
+    color: #fff;
+    
+}
+.row{
+    
+    border-top: 8px solid #333;
+
+}
+.col{
+    width: 100%;
+    color: #fff;
+     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 12%;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+ .col h2{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+ }
+ .text-col p{
+    margin: 10px 0;
+    font-size: 22px;
+    /* letter-spacing: 1px; */
+    font-weight: 500;
+    line-height: 27px;
+ }
+
+ .dropdown-text{
+    text-align: center;
+    margin: 50px  auto;
+ }
+ .dropdown-text h2{
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 700;
+    padding: 20px 0;
+ }
+ .accordian{
+    color: #ffffff;
+    margin: 60px auto;
+    width: 100%;
+    max-width: 650px;
+ }
+ .accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+ }
+ .accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    background: #303030;
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer;
+ }
+ label::after{
+    content: "+";
+    font-size: 24px;
+    position: absolute;
+    right: 24px;
+    transition: transform 0.5s;
+ }
+ 
+ input[type="radio"]{
+    display: none;
+ }
+ .accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 400;
+    transition: max-height 0.4s, padding 0.4s;
+ }
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 550px;
+    padding: 25px 20px;
+
+}
+
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.emil{
+    color: #ffffff;
+    margin: 20px ;
+    padding-bottom: 30px;
+}
+.emil p{
+    font-size: 18px;
+    /* padding: 20px 0; */
+    padding-bottom: 7px;
+    text-align: center;
+}
+.emil .form{
+    padding-bottom: 20px;
+}
+/*  ** ******faq-section**************** */
+.faq{
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    padding: 0px 12%;
+    text-align: left;
+
+
+}
+.faqsec{
+    padding: 30px ;
+    align-items: center;
+}
+
+.faq li{
+    list-style:none;
+    margin: 15px 0;
+}
+.faqsec a{
+    font-size: 13px;
+    color: #b3a7a7;
+    padding: 10px ;
+    font-weight: 200;
+}
